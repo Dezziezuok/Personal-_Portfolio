@@ -708,22 +708,32 @@ body {
       padding: 25px 0; /* Padding for the menu */
       border: none; /* No border */
       margin-top: 30px; /* Margin from the top */
+
      
     }
 
     /* Nav icons style */
-    nav i {
-      position: relative;
+    #open-menu {
+      position: fixed;
       font-size: 20px;
-      color: white;
+      color: white; /* Color for the icons */
       cursor: pointer;
-      margin-top: 25px; /* Margin from the top */
+      margin-top: 20px; /* Margin from the top */
       z-index: 11;
       margin-right: 5px; /* Margin from the right */
     }
+
+    #close-menu {
+      position: relative;
+      font-size: 20px;
+      color: #b4abcf; /* Color for the icons */
+      cursor: pointer;
+    }
+
+
     /* Hide the nav icons on big screens */
     @media (min-width: 768px) {
-      #up, #down {
+      #open-menu, #close-menu {
         display: none;
       }
 
