@@ -748,6 +748,9 @@
         width: 100%;
         max-width: 600px;
         margin: 0 auto; /* Center the text container */
+        padding: 20px;
+        width: 600px; /* Full width of the container */
+
       }
 
       .aboutme-tabs {
@@ -756,9 +759,7 @@
         flex-wrap: wrap; /* Wrap items to the next line if needed */
         gap: 10px; /* Space between tabs */
       }
-  
 
-      
 
     
       /* Adjust container padding/margin */
