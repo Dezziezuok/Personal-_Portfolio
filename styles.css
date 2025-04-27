@@ -715,10 +715,20 @@ body {
 
     @media (max-width: 600px) {
 
+      html {
+        text-align: center; /* Center titles */
+        justify-content: center; /* Center the text */
+        margin-left: 5px; /* Margin from the left */
+        margin-right: 5px; /* Margin from the right */
+
+      }
+
        /* Text resizing for better mobile readability */
       h1 {
-        font-size: 28px !important; /* Slightly smaller for small screens */
+        font-size: 26px !important; /* Slightly smaller for small screens */
         text-align: center; /* Center titles */
+        justify-content: center; /* Center the text */
+
       }
 
       h2 {
@@ -735,14 +745,20 @@ body {
         font-size: 16px !important;
         text-align: center;
         padding: 0 15px; /* Add padding so text doesn’t touch screen edges */
+        margin-left: 10px; /* Margin from the left */
+        margin-right: 10px; /* Margin from the right */
       }
 
-  /* Adjust container padding/margin */
-  .projets-container, 
-  .portfolio-contents {
-    margin: 10px;
-  }
-}
+    /* Adjust container padding/margin */
+    .projets-container, 
+    .portfolio-contents {
+      margin-left: 10px; /* Margin from the left */
+      margin-right: 10px; /* Margin from the right */
+      width: 350px; /* Full width of the container */
+      height: 100%; /* Full height of the container */
+
+    }
+    }
 
     /* visibility on smaller screens */
 
@@ -792,13 +808,12 @@ body {
 
       #sidemenu {
         display: flex; /* Flexbox for alignment */
-        position: static;
+        position: fixed;
         width: auto;
         height: auto;
         background: none;
         flex-direction: row;
-        padding-top: 0;
-        right: 0;
+        gap: 5px; /* Space between items */
       }
     } /* <-- this closes the @media properly */
 
