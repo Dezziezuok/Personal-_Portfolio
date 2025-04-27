@@ -758,7 +758,7 @@ body {
         gap: 10px !important; /* Space between tabs */
       }
 
-
+    
       /* Adjust container padding/margin */
       .projets-container, 
       .portfolio-contents {
@@ -768,7 +768,9 @@ body {
         height: 100%; /* Full height of the container */
 
       }
-      }
+
+    }
+      
 
     /* visibility on smaller screens */
 
