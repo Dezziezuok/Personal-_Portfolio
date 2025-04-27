@@ -216,6 +216,8 @@ body {
     .portfolio-quote-container :hover {
       transform: scale(1.5); /* Scale effect on hover */
       transition: transform 0.6s ease; /* Smooth transition */
+      margin-right: 10px; /* Margin from the right */
+      margin-left: 10px; /* Margin from the left */
     }
 
 
@@ -315,6 +317,8 @@ body {
       flex-wrap: wrap; /* Wrap items to the next line if needed */
       gap: 70px; /* Space between items */
       margin-bottom: 75px; /* Margin from the bottom */
+      margin-right: 10px; /* Margin from the right */
+      margin-left: 10px; /* Margin from the left */
     
     }
 
@@ -329,6 +333,8 @@ body {
       display: flex; /* Flexbox for alignment */
       justify-content: space-around; /* Space between items */
       flex-wrap: wrap; /* Wrap items to the next line if needed */
+      margin-right: 10px; /* Margin from the right */
+      margin-left: 10px; /* Margin from the left */
       
     }
 
@@ -345,8 +351,6 @@ body {
      display: flex; /* Flexbox for alignment */
       justify-content: space-around; /* Center items horizontally */
       flex-wrap: wrap; /* Wrap items to the next line if needed */
-      margin-right: 35px; /* Margin from the right */
-      margin-left: 35px; /* Margin from the left */
       gap: 125px; /* Space between tabs */
       margin-bottom: 50px; /* Margin from the bottom */
     }
@@ -360,6 +364,7 @@ body {
       text-decoration: none; /* Remove underline */
       position: relative; /* Position for the underline effect */
       cursor: pointer;
+      
     }
 
     .aboutme-links::after {
@@ -407,6 +412,12 @@ body {
     #projects {
       padding: 30px 0; /* Padding for the projects section */
       color: white; /* Text color */
+    }
+
+    .projects-container {
+      margin-left: 10px; /* Margin from the left */
+      margin-right: 10px; /* Margin from the right */
+      justify-content: center; /* Center the text */
     }
 
 
@@ -474,6 +485,12 @@ body {
     #services {
       padding: 30px 0; /* Padding for the services section */
       color: white; /* Text color */
+    }
+
+    .services-container {
+      margin-left: 10px; /* Margin from the left */
+      margin-right: 10px; /* Margin from the right */
+      justify-content: center; /* Center the text */
     }
 
     .services-list{
@@ -575,6 +592,9 @@ body {
       flex-direction: column; /* Column layout */
       align-items: center; /* Center items horizontally */
       gap: 10px; /* Space between items */
+      margin-left: 10px; /* Margin from the left */
+      margin-right: 10px; /* Margin from the right */
+      justify-content: center; /* Center the text */
     }
     
     .footer-logo {
@@ -691,33 +711,36 @@ body {
       .social-media-container {
         display: none;
       }
+    }
+
+    @media (max-width: 600px) {
 
        /* Text resizing for better mobile readability */
-  h1 {
-    font-size: 28px; /* Slightly smaller for small screens */
-    text-align: center; /* Center titles */
-  }
+      h1 {
+        font-size: 28px !important; /* Slightly smaller for small screens */
+        text-align: center; /* Center titles */
+      }
 
-  h2 {
-    font-size: 24px;
-    text-align: center;
-  }
+      h2 {
+        font-size: 24px !important;
+        text-align: center;
+      }
 
-  h3 {
-    font-size: 20px;
-    text-align: center;
-  }
+      h3 {
+        font-size: 20px !important;
+        text-align: center;
+      }
 
-  p {
-    font-size: 16px;
-    text-align: center;
-    padding: 0 15px; /* Add padding so text doesn’t touch screen edges */
-  }
+      p {
+        font-size: 16px !important;
+        text-align: center;
+        padding: 0 15px; /* Add padding so text doesn’t touch screen edges */
+      }
 
-  /* Optional: Adjust container padding/margin */
-  .projets-container, /* looks like you meant projects-container */
+  /* Adjust container padding/margin */
+  .projets-container, 
   .portfolio-contents {
-    padding: 20px;
+    margin: 10px;
   }
 }
 
