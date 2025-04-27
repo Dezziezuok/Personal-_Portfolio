@@ -715,11 +715,12 @@ body {
 
     @media (max-width: 768px) {
 
-      html {
-        justify-content: center;
-        margin-left: 5px; /* Margin from the left */
-        margin-right: 5px; /* Margin from the right */
-
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        text-align: center;
+        overflow-x: hidden;
       }
 
        /* Text resizing for better mobile readability */
@@ -753,23 +754,42 @@ body {
       }
   
 
-      .aboutme-tabs {
-        justify-content: space-around; /* Center items horizontally */
-      }
+      
 
     
       /* Adjust container padding/margin */
-      .projets-container {
-        display: flex; /* Make it flex */
-        flex-direction: column; /* Keep everything stacked vertically */
-        align-items: center; /* Center everything horizontally */
-        margin: 0 auto; /* Center the container itself */
-        padding: 20px; /* Optional: add some breathing space */
-        width: 90%; /* More responsive: not stuck at 50% */
-        
-
+      .page-container,
+      .header-container,
+      .home-container,
+      .aboutme-container,
+      .portfolio-content,
+      .services-container,
+      .projects-container,
+      .container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 auto;
       }
 
+      .logo-container img,
+      .home-image img,
+      .portfolio-container img {
+        max-width: 90%;
+        height: auto;
+      }
+    
+      .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        text-align: center;
+      }
+    
     }
       
 
