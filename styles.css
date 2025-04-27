@@ -6,7 +6,6 @@
     box-sizing: border-box; /* Include padding and border in element's total width and height */
     font-family: Georgia, sans-serif; /* Font family for the entire page */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
-  }
 
   /* Body attributes */
 body {
@@ -742,11 +741,17 @@ body {
       }
 
       p {
-        font-size: 14px !important;
-        text-align: center;
-        padding: 0 15px; /* Add padding so text doesn’t touch screen edges */
-        margin-left: 10px; /* Margin from the left */
-        margin-right: 10px; /* Margin from the right */
+          font-size: 14px;
+          padding: 0 20px; /* Add breathing space on the sides */
+          margin-bottom: 20px; /* Nice spacing between paragraphs */
+          line-height: 1.6; /* Make it easier to read */
+          text-align: center;
+        }
+      
+        .home-text-container {
+          text-align: center;
+          padding: 20px;
+        }
       }
 
     .aboutme-tabs {
