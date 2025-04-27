@@ -749,16 +749,21 @@ body {
         margin-right: 10px; /* Margin from the right */
       }
 
-    /* Adjust container padding/margin */
-    .projets-container, 
-    .portfolio-contents {
-      margin-left: 10px; /* Margin from the left */
-      margin-right: 10px; /* Margin from the right */
-      width: 350px; /* Full width of the container */
-      height: 100%; /* Full height of the container */
+    .aboutme-tabs {
+      gap: 10px; /* Space between tabs */
+    }
 
-    }
-    }
+
+      /* Adjust container padding/margin */
+      .projets-container, 
+      .portfolio-contents {
+        margin-left: 10px; /* Margin from the left */
+        margin-right: 10px; /* Margin from the right */
+        width: 400px; /* Full width of the container */
+        height: 100%; /* Full height of the container */
+
+      }
+      }
 
     /* visibility on smaller screens */
 
@@ -813,7 +818,7 @@ body {
         height: auto;
         background: none;
         flex-direction: row;
-        gap: 5px; /* Space between items */
+        gap: 10px; /* Space between items */
       }
     } /* <-- this closes the @media properly */
 
