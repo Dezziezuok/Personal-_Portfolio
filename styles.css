@@ -690,6 +690,22 @@ body {
       .social-media-container {
         display: none;
       }
+
+      h1 {
+        font-size: 30px; /* Font size for the title */
+      }
+
+      h2 {
+        font-size: 24px; /* Font size for the title */
+      }
+
+      h3 {
+        font-size: 20px; /* Font size for the title */
+      }
+
+      p {
+        font-size: 16px; /* Font size for the title */
+      }
     }
 
     /* visibility on smaller screens */
@@ -718,7 +734,8 @@ body {
       font-size: 20px;
       color: white; /* Color for the icons */
       cursor: pointer;
-      margin-top: 20px; /* Margin from the top */
+      margin-top: 25px; /* Margin from the top */
+      gap: 5px; /* Space between icons */
       z-index: 11;
       margin-right: 5px; /* Margin from the right */
     }
