@@ -37,6 +37,7 @@ body {
       flex-direction: column; /* Column layout */
       flex: 1; /* Fills the remaining space to push footer down */
     }
+
     main {
       flex: 1; /* Fills the remaining space to push footer down */
     }
@@ -691,22 +692,34 @@ body {
         display: none;
       }
 
-      h1 {
-        font-size: 30px; /* Font size for the title */
-      }
+       /* Text resizing for better mobile readability */
+  h1 {
+    font-size: 28px; /* Slightly smaller for small screens */
+    text-align: center; /* Center titles */
+  }
 
-      h2 {
-        font-size: 24px; /* Font size for the title */
-      }
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
 
-      h3 {
-        font-size: 20px; /* Font size for the title */
-      }
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
 
-      p {
-        font-size: 16px; /* Font size for the title */
-      }
-    }
+  p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px; /* Add padding so text doesn’t touch screen edges */
+  }
+
+  /* Optional: Adjust container padding/margin */
+  .projets-container, /* looks like you meant projects-container */
+  .portfolio-contents {
+    padding: 20px;
+  }
+}
 
     /* visibility on smaller screens */
 
@@ -732,12 +745,12 @@ body {
     #open-menu {
       position: fixed;
       font-size: 20px;
-      color: white; /* Color for the icons */
+      color: whitesmoke; /* Color for the icons */
       cursor: pointer;
       margin-top: 25px; /* Margin from the top */
-      gap: 5px; /* Space between icons */
       z-index: 11;
-      margin-right: 5px; /* Margin from the right */
+      opacity: 0.8; /* Slightly transparent */
+      justify-content: center;
     }
 
     #close-menu {
