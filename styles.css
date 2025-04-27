@@ -713,11 +713,10 @@ body {
       }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
 
       html {
-        text-align: center; /* Center titles */
-        justify-content: center; /* Center the text */
+        justify-content: center;
         margin-left: 5px; /* Margin from the left */
         margin-right: 5px; /* Margin from the right */
 
@@ -755,17 +754,19 @@ body {
   
 
       .aboutme-tabs {
-        gap: 10px !important; /* Space between tabs */
+        justify-content: space-around; /* Center items horizontally */
       }
 
     
       /* Adjust container padding/margin */
-      .projets-container, 
-      .portfolio-contents {
-        margin-left: 10px; /* Margin from the left */
-        margin-right: 10px; /* Margin from the right */
-        width: 400px; /* Full width of the container */
-        height: 100%; /* Full height of the container */
+      .projets-container {
+        display: flex; /* Make it flex */
+        flex-direction: column; /* Keep everything stacked vertically */
+        align-items: center; /* Center everything horizontally */
+        margin: 0 auto; /* Center the container itself */
+        padding: 20px; /* Optional: add some breathing space */
+        width: 90%; /* More responsive: not stuck at 50% */
+        
 
       }
 
