@@ -9,7 +9,7 @@
   }
 
   /* Body attributes */
-body {
+  body {
     width: 100%; /* Full width of the viewport */
     height: 100%; /* Full height of the viewport */
     background-color: #2f2239 !important;
@@ -29,8 +29,8 @@ body {
       background-color: #2f2239; /* this ensures full-page background */
       scroll-behavior: smooth; /* Smooth scrolling */
 
+    }
 
-    /* Placement on tabs */
     .page-container {
       background-color: #2f2239;
       display: flex; /* Flexbox for alignment */
@@ -72,7 +72,7 @@ body {
       margin-top: 20px; /* Margin from the top */
     }
 
-    }
+    
 
     p {
       font-family: Georgia serif; /* Font family for the subheader */
@@ -221,23 +221,15 @@ body {
     }
 
 
-    /* Center buttons */
-    .header-container {
-      display: flex; /* Flexbox for alignment */
-      justify-content: center;
-      gap: 35px; /* Space between buttons */
-    }
+      /* Center buttons */
+      .header-container {
+        display: flex; /* Flexbox for alignment */
+        justify-content: center;
+        gap: 35px; /* Space between buttons */
+      }
+    
 
-    .nav-container {
-      font-family: Georgia serif;
-      font-size: 22px;
-      display: flex; /* Flexbox for alignment */
-      align-items: center; /* Center items horizontally */
-      justify-content: center; /* Center items vertically */
-      gap: 35px; /* Space between buttons */
-      
-      border: none; /* No border */
-    }
+   
     
     .nav-link {
       text-decoration: none;
@@ -746,11 +738,23 @@ body {
         text-align: center;
         margin-left: 10px; /* Margin from the left */
         margin-right: 10px; /* Margin from the right */
+       
       }
+
     
       .home-text-container {
         text-align: center;
-        padding: 20px;
+        padding: 20px; /* Padding for the text container */
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto; /* Center the text container */
+      }
+
+      .aboutme-tabs {
+        display: flex; /* Flexbox for alignment */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Wrap items to the next line if needed */
+        gap: 10px; /* Space between tabs */
       }
   
 
@@ -759,7 +763,6 @@ body {
     
       /* Adjust container padding/margin */
       .page-container,
-      .header-container,
       .home-container,
       .aboutme-container,
       .portfolio-content,
@@ -773,10 +776,8 @@ body {
         margin: 0 auto;
       }
 
-      .logo-container img,
-      .home-image img,
-      .portfolio-container img {
-        max-width: 90%;
+      .home-image img {
+        max-width: 60%;
         height: auto;
       }
     
@@ -789,10 +790,18 @@ body {
       nav {
         text-align: center;
       }
-    
-    }
-      
 
+      .projects-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .projects-section{
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    
     /* visibility on smaller screens */
 
     #sidemenu {
@@ -809,9 +818,13 @@ body {
       padding: 25px 0; /* Padding for the menu */
       border: none; /* No border */
       margin-top: 30px; /* Margin from the top */
-
-     
+      gap: 35px; /* Space between items */
+      justify-content: center; /* Center items vertically */
+      align-items: center; /* Center items horizontally */
     }
+  }
+
+    
 
     /* Nav icons style */
     #open-menu {
@@ -840,14 +853,20 @@ body {
       }
 
       #sidemenu {
-        display: flex; /* Flexbox for alignment */
-        position: fixed;
-        width: auto;
+        display: flex; /* <-- change from 'contents' to 'flex' */
+        position: fixed; /* Fixed position for the menu */
+        left: 0; /* Align to the right */
+        position: relative; /* no need for fixed anymore */
+        width: 100%;
         height: auto;
         background: none;
         flex-direction: row;
-        gap: 10px; /* Space between items */
+        gap: 35px; /* Match your desktop gap */
+        margin-top: 50px; /* Margin from the top */
+
+       
       }
+        
     } /* <-- this closes the @media properly */
 
 
