@@ -205,25 +205,24 @@ body {
     }
 
     .portfolio-quote-container {
-      margin-top: 175px; /* Margin from the top */
+      margin-top: 205px; /* Margin from the top */
       justify-content: center; /* Center the text */
       margin-bottom: 170px; /* Margin from the bottom */
+      border: #2f2239 2px solid; /* Border around the quote container */
     }
 
 
-
     .portfolio-quote-container :hover {
-      color: white; /* Change color on hover */
       transform: scale(1.5); /* Scale effect on hover */
       transition: transform 0.6s ease; /* Smooth transition */
     }
 
 
-  /* Center buttons */
-  .header-container {
-    display: flex; /* Flexbox for alignment */
-    justify-content: center;
-    gap: 35px; /* Space between buttons */
+    /* Center buttons */
+    .header-container {
+      display: flex; /* Flexbox for alignment */
+      justify-content: center;
+      gap: 35px; /* Space between buttons */
     }
 
     .nav-container {
@@ -291,7 +290,6 @@ body {
     
 
 
-
   /* picture near the home section */
   .portfolio-image {
     justify-content: center; /* Center the image */
@@ -315,6 +313,7 @@ body {
       justify-content: space-around; /* Space between items */
       flex-wrap: wrap; /* Wrap items to the next line if needed */
       gap: 70px; /* Space between items */
+      margin-bottom: 75px; /* Margin from the bottom */
     
     }
 
@@ -348,7 +347,7 @@ body {
       margin-right: 35px; /* Margin from the right */
       margin-left: 35px; /* Margin from the left */
       gap: 125px; /* Space between tabs */
-      margin-bottom: 75px; /* Margin from the bottom */
+      margin-bottom: 50px; /* Margin from the bottom */
     }
 
 
@@ -401,29 +400,72 @@ body {
     }
 
 
+
     /* Projects container and attributes */
 
     #projects {
-      padding: 80px 0; /* Padding for the projects section */
+      padding: 30px 0; /* Padding for the projects section */
       color: white; /* Text color */
     }
 
-    .projects-container {
-      display: flex; /* Flexbox for alignment */
-      justify-content: space-around; /* Space between items */
+
+    .projects-grid {
+      display:flex; /* Flexbox for alignment */
+      gap: 50px; /* Space between the sections */
+      margin-top: 30px;
       flex-wrap: wrap; /* Wrap items to the next line if needed */
-      gap: 70px; /* Space between items */
+      justify-content: center; /* Space between items */
+      margin-left: 50px; /* Margin from the left */
+      margin-right: 50px; /* Margin from the right */
+      flex-direction: column; /* Column layout */
+      width: 600px; /* Full width of the container */
+    }
+    
+    .projects-section {
+      background: #E5E4E2; /* Background color for the projects section */
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color:#b4abcf; /* Text color for the projects section */
+      border: #2f2239 5px solid; /* Border around the projects section */
+    }
+
+    .projects-section:hover {
+      background-color: white; /* Darker background on hover */
+      border: none; /* No border on hover */
+    }
+
+    .projects-section p {
+      font-family: Georgia serif; /* Font family for the projects text */
+      font-size: 16px; /* Font size for the projects text */
+      color: #2f2239; /* Text color for the projects text */
+      margin-top: 10px; /* Margin from the top */
+      text-align: center; /* Center the text */
     }
 
 
+    .projects-section a {
+      text-decoration: none; /* Remove underline */
+      color: #b4abcf; /* Color for the links */
+      font-family: Georgia serif; /* Font family for the links */
+      font-size: 18px; /* Font size for the links */
+     
+    }
 
+    .projects-section a:hover {
+     background-color: #b4abcf; /* Darker background on hover */
+      color: white; /* Change color on hover */
+      text-decoration: none; /* Remove underline */
+      padding: 10px; /* Padding for the links */
+      border-radius: 40px; /* Rounded corners for the links */
+      transition: background 0.5s; /* Transition for background color */
+    }
 
-
-
-  
-
-
-
+    .projects-section .fa-solid  {
+      font-size: 0.6rem; /* or 12px */
+      color: #b4abcf /* Color for the icons */
+    
+    }
 
 
 
@@ -654,11 +696,10 @@ body {
 
     #sidemenu {
       position: fixed;
-      margin-top: 0; /* Margin from the top */
-      top: 0; /* Position from the top */
+      top: -30px !important; /* Align to the top */
       right: -200px; /* Hide off screen */
       width: 150px;
-      height: 100vh;
+      height: 100%; /* Full height of the screen */
       background: white; /* Background color for the menu */
       display: flex;
       flex-direction: column;
