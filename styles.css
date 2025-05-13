@@ -12,13 +12,13 @@
   body {
     width: 100%; /* Full width of the viewport */
     height: 100%; /* Full height of the viewport */
-    background-color: #2f2239 !important;
     overflow-y: auto; /* Vertical scroll bar */
     overflow-x: hidden; /* No horizontal scroll bar */
     cursor: crosshair; /* Crosshair cursor */
     position: relative; /* Relative positioning for the body */
     display: flex; /* Flexbox for alignment */
     flex-direction: column; /* Column layout */
+    background-color: #2f2239; /* Background color for the body */
     }
     
 
@@ -26,13 +26,13 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: #2f2239; /* this ensures full-page background */
+      background-color:#2f2239; /* this ensures full-page background */
       scroll-behavior: smooth; /* Smooth scrolling */
 
     }
 
     .page-container {
-      background-color: #2f2239;
+      background-color: #2f2239; /* Background color for the page container */
       display: flex; /* Flexbox for alignment */
       flex-direction: column; /* Column layout */
       flex: 1; /* Fills the remaining space to push footer down */
@@ -197,12 +197,13 @@
     }
 
     .portfolio-ai {
-      margin-top: 75px; /* Margin from the top */
-      width: 600px;
-      height: 575px;
+      margin-top: 150px; /* Margin from the top */
+      width: 500px;
+      height: 475px;
       background-image: url('aiportfolioimage.png'); /* Background image */
       background-size: cover; /* Cover the entire area */
       background-position: center; /* Center the image */
+      opacity: 0.75; /* Slightly transparent */
     }
 
     .portfolio-quote-container {
@@ -414,15 +415,16 @@
 
 
     .projects-grid {
-      display:flex; /* Flexbox for alignment */
+      display: flex; /* Flexbox for alignment */
+      justify-content: space-around; /* Space between items */
+      flex-wrap: wrap; /* Wrap items to the next line if needed */
       gap: 50px; /* Space between the sections */
       margin-top: 30px;
-      flex-wrap: wrap; /* Wrap items to the next line if needed */
       justify-content: center; /* Space between items */
       margin-left: 50px; /* Margin from the left */
       margin-right: 50px; /* Margin from the right */
       flex-direction: column; /* Column layout */
-      width: 600px; /* Full width of the container */
+      max-width: 600px; /* Full width of the container */
     }
     
     .projects-section {
@@ -719,7 +721,6 @@
       h1 {
         font-size: 26px !important; /* Slightly smaller for small screens */
         text-align: center; /* Center titles */
-        justify-content: center; /* Center the text */
 
       }
 
@@ -770,7 +771,7 @@
       .services-container,
       .projects-container,
       .container {
-        width: 100%;
+        max-width: fit-content;
         padding: 10px;
         box-sizing: border-box;
         text-align: center;
@@ -778,7 +779,7 @@
       }
 
       .home-image img {
-        max-width: 60%;
+        max-width: 70%;
         height: auto;
       }
     
@@ -811,7 +812,7 @@
       right: -200px; /* Hide off screen */
       width: 150px;
       height: 100%; /* Full height of the screen */
-      background: white; /* Background color for the menu */
+      background: #2f2239; /* Background color for the menu */
       display: flex;
       flex-direction: column;
       transition: 0.4s;
